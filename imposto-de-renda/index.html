@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Guilherme Machado Dal Castel">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img id="imagem" src="./image/699px-Logo_Receita_Federal_do_Brasil.svg.png">
+    <main>
+        <div id="form">
+            <div id="title"> <h2> Imposto de Renda </h2></div>
+            <form>
+                    <input id="name" name="name" autocomplete="off" type="text"
+                    placeholder="  Insira seu nome" class="inputs">
+                    <input id="salario" name="salario" type="number" autocomplete="off" 
+                    placeholder="  Insira o salário bruto" class="inputs">
+                    <input id="dependentes" name="dependente" type="number" autocomplete="off"
+                    placeholder="Insira o numero de depentedes" class="inputs">
+                    <button id="button"> Calcular </button>
+            </form>
+        </div>
+        <div id="table">
+            <table border="1" id= "tabela">
+                <tbody>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Salário Bruto</th>
+                        <th>INSS %</th>
+                        <th>INSS R$</th>
+                        <th>IRPF %</th>
+                        <th>IRPF R$</th>
+                        <th>Salário Líquido</th>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="limpar"> Limpar </button>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

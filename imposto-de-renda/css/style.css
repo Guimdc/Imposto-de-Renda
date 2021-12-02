@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#imagem{
+    position: fixed;
+    width: 10%;
+}
+
+body{
+    background: linear-gradient(180deg, #FCFDFF 9.41%, #2D7FFA 45.47%, #052E6B 69.95%);
+    margin: 0 4vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#form{
+    height: 78vh;
+    margin: 8vh 30vw;
+    background: #FCFDFF;
+    border: 3px solid #DADCE0;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 4px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5em;
+}
+
+#form img{
+    width: 10em;
+    position: relative;
+}
+
+#title h2 {
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 2em;
+}
+
+.inputs{
+    position: relative;
+    text-align: center;
+    margin: 3vh 3%;
+    width: 94%;
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid #DADCE0;
+}
+
+#name{
+    margin-top: 6vh;
+}
+
+#button{
+    text-align: center;
+    margin: 2vh 3%;
+    width: 94%;
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 1em;
+    border-radius: 1em;
+    border: 0;
+}
+
+#tabela{
+    border-radius: 1em;
+    font-size: 14px;
+    background: #FFFFF0;
+    border-radius: 5px;
+}
+
+#tabela th{
+    text-align: center;
+    margin-right: 30px;
+}
+
+#tabela td{
+    border: 1px solid black;
+}
+
+#limpar{
+    text-align: center;
+    border: 1px solid #012458;
+    background-color: #1a73e8;
+    color: #ffffff;
+    width: 25vw;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px; 
+    margin-bottom: 50px;
+}
+
+#table{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+}
