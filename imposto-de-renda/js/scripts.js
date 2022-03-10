@@ -52,31 +52,16 @@ document.getElementById("button").onclick = function (){
             porcentagem_IRPF = 0.275;
             parcela_IRPF = 869.36
         }
-        desconto_final_IRPF = salario_pos_INSS * porcentagem_IRPF - parcela_IRPF;
-        salario_final = salario_pos_INSS - desconto_final_IRPF;
-        salario = salario.toFixed(2);
-        porcentagem_INSS = porcentagem_INSS.toFixed(2);
-        desconto_INSS = desconto_INSS.toFixed(2);
-        porcentagem_IRPF = porcentagem_IRPF.toFixed(2);
-        desconto_final_IRPF = desconto_final_IRPF.toFixed(2);
-        salario_final = salario_final.toFixed(2);
-
-        tabela.innerHTML += `
-                            <tr class = "limpar">
-                            <th>${name}</th>
-                            <th>${salario}</th>
-                            <th>${porcentagem_INSS}</th>
-                            <th>${desconto_INSS}</th>
-                            <th>${porcentagem_IRPF}</th>
-                            <th>${desconto_final_IRPF}</th>
-                            <th>${salario_final}</th>
-                            </tr>
-                            `               
-        document.getElementById("name").value = null
-        document.getElementById("salario").value = null
-        document.getElementById("dependentes").value = null
-
-    }
+    }else if(escala=='R'){
+        if(escalaDese=='F'){
+            resultado=temp-459.67;
+        }else if(escalaDese=='K'){
+            resultado=temp-(5/9);
+        }else if(escalaDese=='R'){
+            resultado=temp;
+        }else if(escalaDese=='C'){
+            resultado=(temp-491.67)*(5/9);
+        }
     else{
         alert ("Preencha os Campos para Calcular");
     }
